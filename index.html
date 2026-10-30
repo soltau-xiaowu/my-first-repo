@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f4ef">
+<title>灵感，从一次点击开始 · ChatGPT 入场动画</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f4ef;color:#222820;font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #27866b;outline-offset:6px}header{height:100px;display:flex;align-items:center;justify-content:space-between;max-width:1320px;margin:auto;padding:0 48px}.brand{display:flex;align-items:center;gap:10px;font-weight:650;letter-spacing:-.5px}.brand span{display:grid;place-items:center;background:#253e32;color:#fff;width:30px;height:30px;border-radius:10px;font-size:21px}.edition{font-size:11px;letter-spacing:2px;color:#747b70}main{max-width:1320px;margin:auto;min-height:calc(100svh - 180px);display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:64px;padding:48px}.eyebrow{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:2px;color:#66775e}.eyebrow:before{content:"";width:7px;height:7px;background:#6d865e;border-radius:50%}h1{font-size:clamp(46px,5.3vw,76px);font-weight:500;letter-spacing:-3px;line-height:1.18;margin:27px 0}h1 em{font-style:normal;color:#78876a}.intro{color:#7b8077;line-height:1.95;font-size:15px;margin:0 0 32px}.launch{display:inline-flex;gap:22px;align-items:center;background:#273e32;color:white;border:0;border-radius:50px;padding:18px 26px;box-shadow:0 8px 20px #273e3217;transition:transform .2s,background .2s}.launch:hover{transform:translateY(-3px);background:#355943}.launch .symbol{font-size:21px}.launch .arrow{margin-left:22px}.hint{font-size:11px;color:#8a8d83;margin-top:18px}.stage{position:relative;min-height:530px;display:grid;place-items:center;isolation:isolate}.halo{position:absolute;width:460px;height:460px;max-width:100%;background:radial-gradient(ellipse,#cdd8bc99,transparent 68%);z-index:-1}.ring{position:absolute;width:410px;height:410px;max-width:95%;border:1px solid #dfe3d7;border-radius:50%}.ring:after{content:"";position:absolute;inset:35px;border:1px dashed #dde1d4;border-radius:50%}.idle{text-align:center;color:#8c9781;transition:opacity .2s}.idle-icon{width:90px;height:90px;margin:0 auto 24px;border-radius:28px;background:#edf0e6;border:1px solid #dce3d2;display:grid;place-items:center;font-size:42px;color:#66805b;box-shadow:0 15px 40px #536e4210}.idle p{font-size:12px;letter-spacing:2px}.stage.active .idle{opacity:0}.panel{position:absolute;width:min(100%,400px);padding:29px;border-radius:25px;background:#ffffffed;border:1px solid #fff;box-shadow:0 30px 70px #34472c17,0 4px 15px #34472c05;transform-origin:center 70%}.panel[hidden]{display:none}.panel.entering{animation:arrive .75s cubic-bezier(.16,1,.3,1) both}.panel.entering .reveal{animation:child-in .65s cubic-bezier(.16,1,.3,1) both;animation-delay:var(--delay,.12s)}.panel-top{display:flex;align-items:center;justify-content:space-between}.avatar{width:46px;height:46px;display:grid;place-items:center;background:#edf2e9;color:#5b7850;border-radius:15px;font-size:26px}.close{border:0;background:#f4f5f1;border-radius:50%;width:30px;height:30px;color:#7d8377;font-size:20px}.status{display:flex;align-items:center;gap:6px;color:#6f8362;font-size:10px;letter-spacing:1px;margin-top:24px}.status:before{content:"";width:5px;height:5px;border-radius:50%;background:#819b6f}.panel h2{font-size:29px;font-weight:500;letter-spacing:-1px;line-height:1.45;margin:13px 0}.panel p{color:#92968d;line-height:1.9;font-size:12px;margin:0 0 23px}.suggestion{background:#f5f6f1;border:1px solid #e9ede2;border-radius:12px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#5d6d50}.panel-bottom{margin-top:24px;padding-top:17px;border-top:1px solid #f0f1ed;display:flex;justify-content:space-between;color:#9b9f94;font-size:10px}.spark{position:absolute;right:6%;top:16%;font-size:34px;color:#8c9a72;transform:rotate(12deg)}.stage.active .spark{animation:child-in .9s ease both}.label{position:absolute;bottom:25px;display:flex;gap:18px;color:#92998a;font-size:10px;letter-spacing:1px}.label span{display:flex;align-items:center;gap:6px}.label i{width:4px;height:4px;border-radius:50%;background:#99a888}footer{max-width:1320px;margin:auto;padding:28px 48px;display:flex;justify-content:space-between;border-top:1px solid #e4e6dc;color:#94988d;font-size:10px;letter-spacing:1px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@keyframes arrive{from{opacity:0;transform:translateY(45px) scale(.88);filter:blur(8px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}@keyframes child-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@media(max-width:800px){header{height:80px;padding:0 24px}.edition{font-size:9px}main{grid-template-columns:1fr;gap:12px;padding:38px 24px 12px}.copy{text-align:center}.eyebrow{justify-content:center}h1{font-size:52px;letter-spacing:-2px}.intro{font-size:13px}.stage{min-height:490px}.panel{width:min(100%,380px)}.spark{right:2%;top:10%}footer{padding:24px;gap:15px;font-size:9px}.label{bottom:12px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.launch:hover{transform:none}}
+</style>
+</head>
+<body>
+<header><div class="brand"><span aria-hidden="true">✳</span> little spark</div><div class="edition">INTERACTION STUDY / 001</div></header>
+<main>
+<section class="copy" aria-labelledby="title"><div class="eyebrow">A LITTLE CLICK. A NEW POSSIBILITY.</div><h1 id="title">灵感，<br>从一次<span style="white-space:nowrap">点击<em>开始。</em></span></h1><p class="intro">给想法一个轻盈的开场。<br>点击下方 ChatGPT，让新的可能缓缓浮现。</p><button class="launch" id="launch" aria-controls="welcome" aria-expanded="false"><span class="symbol" aria-hidden="true">✳</span><span>ChatGPT</span><span class="arrow" aria-hidden="true">↗</span></button><div class="hint">点击体验 · 再次点击即可重播</div></section>
+<section class="stage" aria-label="入场动画展示区"><div class="halo" aria-hidden="true"></div><div class="ring" aria-hidden="true"></div><div class="idle" aria-hidden="true"><div class="idle-icon">✳</div><p>美好的对话，即将开始</p></div><span class="spark" aria-hidden="true">✧</span>
+<article class="panel" id="welcome" aria-labelledby="welcome-title" hidden><div class="panel-top"><div class="avatar" aria-hidden="true">✳</div><button class="close" id="close" aria-label="关闭欢迎卡片">×</button></div><div class="reveal" style="--delay:.12s"><div class="status">HELLO, CREATIVE MIND</div><h2 id="welcome-title">你好，<br>很高兴遇见你的灵感。</h2><p>一个问题，一点好奇，一个尚未成形的想法。<br>每一段精彩的对话，都可以从这里开始。</p></div><div class="suggestion reveal" style="--delay:.22s"><span>✧ &nbsp; 让想象力，向前一步</span><span aria-hidden="true">↗</span></div><div class="panel-bottom reveal" style="--delay:.3s"><span>MADE FOR YOUR NEXT IDEA</span><span>✳</span></div></article><div class="label" aria-hidden="true"><span><i></i> 淡入</span><span><i></i> 上移</span><span><i></i> 缩放</span></div></section>
+</main><footer><span>A SMALL MOMENT OF DELIGHT.</span><span>交互动画演示 · 非官方 ChatGPT 产品</span></footer><div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+<script>
+const launch = document.getElementById('launch');
+const panel = document.getElementById('welcome');
+const stage = document.querySelector('.stage');
+const close = document.getElementById('close');
+const announcement = document.getElementById('announcement');
+function openPanel() {
+  panel.hidden = false;
+  panel.classList.remove('entering');
+  void panel.offsetWidth;
+  panel.classList.add('entering');
+  stage.classList.add('active');
+  launch.setAttribute('aria-expanded', 'true');
+  announcement.textContent = '欢迎卡片已展示。再次点击 ChatGPT 可以重播动画。';
+}
+function closePanel() {
+  panel.hidden = true;
+  panel.classList.remove('entering');
+  stage.classList.remove('active');
+  launch.setAttribute('aria-expanded', 'false');
+  announcement.textContent = '欢迎卡片已关闭。';
+  launch.focus();
+}
+launch.addEventListener('click', openPanel);
+close.addEventListener('click', closePanel);
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !panel.hidden) closePanel();
+});
+</script>
+</body>
+</html>
